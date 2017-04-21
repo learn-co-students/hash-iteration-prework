@@ -7,9 +7,12 @@
 # }
 
 def select_winner(passengers)
-  passengers.each do |k, v|
-    if k.to_s == 'suite_a' && v.start_with?('A')
-      return v
-    end
+  passengers.each {|k, v| return v(k.to_s == 'suite_a' && v.start_with?('A'))}
+end
+
+
+passengers.each do |k, v|
+  if k.to_s == 'suite_a' && v.start_with?('A')
+    return v
   end
 end
