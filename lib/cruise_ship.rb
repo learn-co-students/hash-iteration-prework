@@ -8,5 +8,9 @@
 
 def select_winner(passengers)
   # add the code snippet here!
-  passengers[:suite_a]
+  passengers.each do |room, name|
+    if room == :suite_a && name[0].downcase == 'a'
+      return name
+    end
+  end
 end
