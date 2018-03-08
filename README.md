@@ -1,4 +1,4 @@
-# Iterating Over Hashes With `#each`
+ # Iterating Over Hashes With `#each`
 ## Overview
 
 We'll use iteration to access and manipulate data from hashes.
