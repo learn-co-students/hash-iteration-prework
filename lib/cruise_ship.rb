@@ -7,11 +7,12 @@
 # }
 
 def select_winner(passengers)
-  #This is different than how Learn instructs.  My way requires one less line of code, and doesn't need to use a variable. (But it does use the keyword "return", which may be frowned upon.)
+  winner = ""
   passengers.each do |suite, name| 
     if suite == :suite_a && name.start_with?("A")
-      return name 
+      winner = name 
     end
   end
-  name
+  winner 
 end
+
