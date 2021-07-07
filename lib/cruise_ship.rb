@@ -7,5 +7,8 @@
 # }
 
 def select_winner(passengers)
-  # add the code snippet here!
+  winner = nil
+  passengers.each do |key, val|
+    return val if key.to_s.chars.last == 'a' && val.chars.first == 'A'
+  end 
 end
