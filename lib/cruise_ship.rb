@@ -7,5 +7,5 @@
 # }
 
 def select_winner(passengers)
-  # add the code snippet here!
+  passengers.each  {|suite,name| return name if name.start_with?("A")}
 end
